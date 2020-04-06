@@ -1,0 +1,17 @@
+[root@master ~]# cat samble.yml
+apiVersion: v1
+kind: Pod
+metadata:
+   name: samplepod
+   labels:
+      env: dev
+      client: GoldmanSacs
+      datacenter: Denver
+spec:
+   containers:
+      - name: samplepod-con1
+        image: nginx
+        ports:
+          - containerPort: 80
+
+[root@master ~]#
